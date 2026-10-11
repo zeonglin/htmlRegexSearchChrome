@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "HTML Regex Search",
+  "version": "0.1.0",
+  "description": "Search the current page with a regex, highlight matches, and jump to them.",
+  "permissions": ["sidePanel", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Open Regex Search"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
