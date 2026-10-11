@@ -4,6 +4,8 @@ A minimal Chrome extension (Manifest V3) that searches the **current page's rend
 
 No contenteditable hacks, no page modifications beyond highlight spans, no background activity: type a regex, hit refresh, done.
 
+![Sample_screenshot_on_plugin](ss/sample_plugin_w_search.png)
+
 ## Features
 
 - **Regex search box** with a one-click **⟳ Refresh** button (and a **✕ Clear** button to remove all highlights)
